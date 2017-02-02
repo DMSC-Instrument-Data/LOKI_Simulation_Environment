@@ -12,4 +12,4 @@ This repository contains a [Vagrant](https://www.vagrantup.com) script and assoc
 - Launch a terminal and navigate to the folder which contains the `VagrantFile`
 - run the command `vagrant up --provision-with shell,file`
 
-Vagrant will attempt to download and mount the bare bones version of ubuntu 16.04. You may need to log in before [provisioning](https://www.vagrantup.com/docs/cli/provision.html) starts. Afterwards, the ubuntu desktop and other related dependencies will be downloaded and updated (provisioned) to the VM. Please wait until the entire process is complete before attempting to use the VM.
+Vagrant will attempt to download and mount the bare bones version of ubuntu 16.04. You may need to log in before [provisioning](https://www.vagrantup.com/docs/cli/provision.html) starts. Afterwards, the ubuntu desktop and other related dependencies will be downloaded and updated (provisioned) to the VM. Please wait until the entire process is complete before attempting to use the VM. You will need to run `vagrant reload` in order to load the user interface. Alternatively you can just run `startx` from the ubuntu terminal.
