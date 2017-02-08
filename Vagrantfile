@@ -38,9 +38,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", path: "provision/libnexus0.sh"   
   
   #copy Instructions for running mcstas
-  config.vm.provision "file", source: "./Instructions/ReadMe.md", destination: "/home/vagrant/Desktop/ReadMe.md"
+  config.vm.provision "file", source: "./Instructions/ReadMe.pdf", destination: "/home/vagrant/Desktop/ReadMe.pdf"
   #copy LOKI Files
-  config.vm.provision "file", source: "./LOKI/templateSANS_Mantid.instr", destination: "/home/vagrant/Desktop/LOKI/templateSANS_Mantid.instr"
-  config.vm.provision "file", source: "./LOKI/LoKI_4mm.off", destination: "/home/vagrant/Desktop/LOKI/LoKI_4mm.off"
-  config.vm.provision "file", source: "./LOKI/Monitor_nD.comp", destination: "/home/vagrant/Desktop/LOKI/Monitor_nD.comp"
+  config.vm.provision "file", source: "./LOKI/", destination: "/home/vagrant/Desktop/"
 end
