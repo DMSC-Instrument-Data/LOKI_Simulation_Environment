@@ -6,7 +6,7 @@
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
 Vagrant.configure(2) do |config|
-  # Ubuntu 16.04
+  # Ubuntu 14.04
   config.vm.box = "bento/ubuntu-16.04"
 
 
