@@ -730,22 +730,14 @@ COMPONENT geantOutputRear = Monitor_nD(
 ////////////////////////////////////////////////////////////////////////////////
 
 /// Detectors //////////////////////////////////////////////////////////////////
-//Simple 2x2m detectors ~1m from sample for diagnostics
+//Simple 2x2m detector 1m from sample for diagnostics
 
-COMPONENT simplePositionDetector = Monitor_nD(
+COMPONENT simpleDetector = Monitor_nD(
 		options="x bins=1000 y bins=1000", xwidth=2.0, yheight=2.0,
 		filename="simpleDetectorView", restore_neutron=1
 		)
  WHEN (usedetectors == 1)
  AT (0, 0, 1.0) RELATIVE Sample
-
-COMPONENT simpleTOFDetector = TOF_monitor(xwidth=2.0, yheight=2.0, filename="simpleTOFDet", tmin=0, tmax=100000, restore_neutron=1)
-WHEN(usedetectors == 1)
-AT (0, 0, 1.001) RELATIVE Sample
-
-COMPONENT simpleLambdaDetector = L_monitor(xwidth=2.0, yheight=2.0, filename="simpleLDet", Lmin=l_min_source, Lmax=l_max_source, restore_neutron=1)
-WHEN(usedetectors == 1)
-AT(0, 0, 1.002) RELATIVE Sample
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -754,5 +746,3 @@ FINALLY
 
 %}
 END
-
-

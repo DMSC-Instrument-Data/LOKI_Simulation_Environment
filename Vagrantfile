@@ -39,6 +39,11 @@ Vagrant.configure(2) do |config|
   
   #copy Instructions for running mcstas
   config.vm.provision "file", source: "./Instructions/ReadMe.pdf", destination: "/home/vagrant/Desktop/ReadMe.pdf"
+  #copy McStas manuals
+  config.vm.provision "file", source: "./Instructions/Manuals/", destination: "/home/vagrant/Desktop/"
   #copy LOKI Files
   config.vm.provision "file", source: "./LOKI/", destination: "/home/vagrant/Desktop/"
+  
+  config.vm.provision "shell", 
+    inline: "patch -p 3 -f </home/vagrant/Desktop/LOKI/loki-master-model.instr.patch"
 end
