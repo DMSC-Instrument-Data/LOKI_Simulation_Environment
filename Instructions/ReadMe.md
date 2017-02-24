@@ -57,6 +57,7 @@ calculated based on the instrument parameters lmin=3.0AA and lmax=9.7AA.
 ### MCSTAS Team
 
 For further information contact the ESS Mcstas Team:
-    - Torben Nielsen/Peter Willendrup [DMSC Website](https://europeanspallationsource.se/data-management-and-software-centre)
-    - [Andrew Jackson](https://europeanspallationsource.se/page/andrew-jackson) (original author of loki_master-model.instr)
-    - [General McStas queries](http://www.mcstas.org/about/contacts/)
+
+- Torben Nielsen/Peter Willendrup [DMSC Website](https://europeanspallationsource.se/data-management-and-software-centre)
+- [Andrew Jackson](https://europeanspallationsource.se/page/andrew-jackson) original author of loki_master-model.instr
+- [General McStas queries](http://www.mcstas.org/about/contacts/)
